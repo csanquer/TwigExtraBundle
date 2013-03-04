@@ -13,9 +13,17 @@ use \Twig_NodeInterface;
  */
 class EmbeddedAsset extends Twig_Node
 {
-    public function __construct(Twig_NodeInterface $body, $name = 'default',  $format = 'js', $lineno, $tag = 'embeddedasset')
+    public function __construct(Twig_NodeInterface $body, $package,  $format, $lineno, $tag = 'embeddedasset')
     {
-        parent::__construct(array('body' => $body), array('name' => $name, 'format' => $format), $lineno, $tag);
+        parent::__construct(
+            array('body' => $body),
+            array(
+                'package' => $package !== null && $package !== '' ? 'default' : $package,
+                'format' => $format !== null && $format !== '' ? 'js' : $format
+            ),
+            $lineno,
+            $tag
+        );
     }
 
     /**
@@ -29,7 +37,7 @@ class EmbeddedAsset extends Twig_Node
             ->addDebugInfo($this)
             ->write("ob_start();\n")
             ->subcompile($this->getNode('body'))
-            ->write("\$context['asset_manager']->addEmbeddedContent(ob_get_clean(), '".$this->attributes['name']."', '".$this->attributes['format']."');\n")
+            ->write("\$context['asset_manager']->addEmbeddedContent(ob_get_clean(), '".$this->attributes['package']."', '".$this->attributes['format']."');\n")
         ;
     }
 }

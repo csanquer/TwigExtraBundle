@@ -17,7 +17,7 @@ class EmbeddedAsset extends Twig_TokenParser
     public function parse(Twig_Token $token)
     {
         $format = 'js';
-        $name = 'default';
+        $package = 'default';
 
         $lineno = $token->getLine();
         $stream = $this->parser->getStream();
@@ -27,11 +27,11 @@ class EmbeddedAsset extends Twig_TokenParser
                 $stream->next();
                 $stream->expect(\Twig_Token::OPERATOR_TYPE, '=');
                 $format = $stream->expect(\Twig_Token::STRING_TYPE)->getValue();
-            } elseif ($stream->test(\Twig_Token::NAME_TYPE, 'name')) {
+            } elseif ($stream->test(\Twig_Token::NAME_TYPE, 'package')) {
                 // name = null
                 $stream->next();
                 $stream->expect(\Twig_Token::OPERATOR_TYPE, '=');
-                $name = $stream->expect(\Twig_Token::STRING_TYPE)->getValue();
+                $package = $stream->expect(\Twig_Token::STRING_TYPE)->getValue();
             } else {
                 $token = $stream->getCurrent();
                 throw new \Twig_Error_Syntax(sprintf('Unexpected token "%s" of value "%s"', \Twig_Token::typeToEnglish($token->getType(), $token->getLine()), $token->getValue()), $token->getLine());
@@ -42,7 +42,7 @@ class EmbeddedAsset extends Twig_TokenParser
         $body = $this->parser->subparse(array($this, 'decideEmbeddedAssetEnd'), true);
         $stream->expect(Twig_Token::BLOCK_END_TYPE);
 
-        return new EmbeddedAssetNode($body, $name, $format, $lineno, $this->getTag());
+        return new EmbeddedAssetNode($body, $package, $format, $lineno, $this->getTag());
     }
 
     public function decideEmbeddedAssetEnd(Twig_Token $token)
