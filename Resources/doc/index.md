@@ -68,8 +68,7 @@ Example:
 
 ```
 
-* ::base.html.twig
-
+* base.html.twig
 ``` jinja
 <!DOCTYPE html>
 <html>
