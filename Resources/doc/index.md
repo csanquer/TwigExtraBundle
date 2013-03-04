@@ -32,6 +32,7 @@ This extension provides functions and tag to store some asset files or contents
 Example:
 
 * index.html.twig
+
 ``` jinja
     {% extends '::base.html.twig' %}
     {% block content %}
@@ -47,6 +48,7 @@ Example:
 ```
 
 * partial.html.twig
+
 ``` jinja
     {# store js filepath in asset manager for 'js' format and 'default' section #}
     {% do add_asset('bundles/test/js/jquery.js') %}
@@ -71,7 +73,7 @@ Example:
 
 * base.html.twig
 
-```
+``` jinja
 <!DOCTYPE html>
 <html>
     <head>
