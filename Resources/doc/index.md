@@ -39,6 +39,7 @@ Example:
 
         {% include 'TestBundle:Test:partial.html.twig' %}
     
+        {# store js filepath in asset manager for 'js' format and 'default' section #}
         {% do add_asset('bundles/test/js/test2.js') %}
     
     {% endblock %}
@@ -68,6 +69,7 @@ Example:
 ```
 
 * ::base.html.twig
+
 ``` jinja
 <!DOCTYPE html>
 <html>
@@ -81,7 +83,10 @@ Example:
     
         {% block javascripts %}
             <!-- default js -->
-            {# render managed asset filepath in default section #}
+            {# 
+            render managed asset filepath in default section 
+            get_assets() return an array of filepath
+            #}
             {% for jsfile in get_assets() %}
             <script src="{{ asset(jsfile) }}"></script>
             {% endfor %}
@@ -96,7 +101,10 @@ Example:
         {% block ready_js %}
         <script type="text/javascript">
 
-            {# render managed asset text in default section #}
+            {# 
+            render managed asset text in default section 
+            render_embedded_assets() return all stored text concatened with newlines
+            #}
             {{ render_embedded_assets() }} 
 
             // ready js 
