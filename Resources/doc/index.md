@@ -44,7 +44,6 @@ Example:
         {% do add_asset('bundles/test/js/test2.js') %}
     
     {% endblock %}
-
 ```
 
 * partial.html.twig
@@ -68,7 +67,6 @@ Example:
 
     {# store js text in asset manager for 'js' format and 'ready' section using a function #}
     {% do add_embedded_asset('console.log("bar");', 'ready', 'js') %}
-
 ```
 
 * base.html.twig
@@ -121,7 +119,6 @@ Example:
         {% endblock %}
    </body>
 </html>
-
 ```
 
 Result :
