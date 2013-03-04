@@ -43,6 +43,7 @@ Example:
         {% do add_asset('bundles/test/js/test2.js') %}
     
     {% endblock %}
+
 ```
 
 * partial.html.twig
@@ -69,7 +70,8 @@ Example:
 ```
 
 * base.html.twig
-``` jinja
+
+```
 <!DOCTYPE html>
 <html>
     <head>
@@ -117,6 +119,7 @@ Example:
         {% endblock %}
    </body>
 </html>
+
 ```
 
 Result :
