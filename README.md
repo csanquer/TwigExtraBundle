@@ -8,27 +8,10 @@ Requirements
 * Twig >= 1.12
 * Symfony >= 2.1
 
-Installation
+Documentation
 ------------
 
-### download by composer
-
-Add this in your `composer.json`
-
-    "require": {
-        [...]
-        "csanquer/twig-extra-bundle" : "dev-master"
-    },
-
-And run `php composer.phar update csanquer/twig-extra-bundle`
-
-### Register the bundle in the Kernel (`app/AppKernel.php`)
-
-    [...]
-    $bundles = array( {
-        [...]
-        new CSanquer\Bundle\TwigExtraBundle\CSanquerTwigExtraBundle(),
-    );
+For installation and usage refer to [Resources/doc/index.md](https://github.com/csanquer/TwigExtraBundle/blob/master/Resources/doc/index.md)
 
 Licensing
 ---------
