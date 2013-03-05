@@ -28,3 +28,5 @@ catalog.xml
 om
 map
 composer.lock
+coverage
+phpunit.xml

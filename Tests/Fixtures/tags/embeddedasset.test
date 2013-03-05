@@ -1,0 +1,27 @@
+--TEST--
+"embeddedasset" tag
+--TEMPLATE--
+{% embeddedasset %}
+console.log('Hello');
+{% endembeddedasset %}
+
+{% embeddedasset package='ready'%}
+console.log('Hi');
+{% endembeddedasset %}
+
+{% embeddedasset package='ready'%}
+var aTestVar = 1;
+console.log(aTestVar);
+{% endembeddedasset %}
+
+{{ render_embedded_assets('ready') }}
+{{ render_embedded_assets() }}
+--DATA--
+return array()
+--EXPECT--
+console.log('Hi');
+
+var aTestVar = 1;
+console.log(aTestVar);
+
+console.log('Hello');
