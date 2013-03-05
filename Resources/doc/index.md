@@ -89,13 +89,13 @@ Example:
             get_assets() return an array of filepath
             #}
             {% for jsfile in get_assets() %}
-            <script src="{{ asset(jsfile) }}"></script>
+            <script type="text/javascript" src="{{ asset(jsfile) }}"></script>
             {% endfor %}
 
             <!-- pkg1 js -->
             {# render managed asset filepath in pkg1 section #}
             {% for jsfile in get_assets('pkg1') %}
-            <script src="{{ asset(jsfile) }}"></script>
+            <script type="text/javascript" src="{{ asset(jsfile) }}"></script>
             {% endfor %}
         {% endblock %}
     
@@ -133,11 +133,11 @@ Result :
             <p>Hello !</p>
     
             <!-- default js -->
-            <script src="/bundles/test/js/jquery.js"></script>
-            <script src="/bundles/test/js/test2.js"></script>
+            <script type="text/javascript" src="/bundles/test/js/jquery.js"></script>
+            <script type="text/javascript" src="/bundles/test/js/test2.js"></script>
 
             <!-- pkg1 js -->
-            <script src="/bundles/test/js/test1.js"></script>
+            <script type="text/javascript" src="/bundles/test/js/test1.js"></script>
     
         <script type="text/javascript">
 

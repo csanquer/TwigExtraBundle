@@ -27,7 +27,7 @@ class AssetManager
      *
      * @return \CSanquer\Bundle\TwigExtraBundle\Asset\AssetManager
      */
-    protected function addItem(array $items, $item, $package = 'default', $format = 'js')
+    protected function addItem(array &$items, $item, $package = 'default', $format = 'js')
     {
         $package = $package === null || $package === '' ? 'default' : $package;
 

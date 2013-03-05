@@ -18,8 +18,8 @@ class EmbeddedAsset extends Twig_Node
         parent::__construct(
             array('body' => $body),
             array(
-                'package' => $package !== null && $package !== '' ? 'default' : $package,
-                'format' => $format !== null && $format !== '' ? 'js' : $format
+                'package' => $package === null || $package === '' ? 'default' : $package,
+                'format' => $format === null || $format === '' ? 'js' : $format
             ),
             $lineno,
             $tag
