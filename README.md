@@ -1,6 +1,9 @@
 CSanquer TwigExtraBundle
 ========================
 
+Travis Status
+[![Build Status](https://travis-ci.org/csanquer/TwigExtraBundle.png)](https://travis-ci.org/csanquer/TwigExtraBundle)
+
 Requirements
 ------------
 
