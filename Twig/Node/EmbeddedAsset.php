@@ -2,18 +2,14 @@
 
 namespace CSanquer\Bundle\TwigExtraBundle\Twig\Node;
 
-use \Twig_Compiler;
-use \Twig_Node;
-use \Twig_NodeInterface;
-
 /**
  * EmbeddedAsset
  *
  * @author Charles Sanquer <charles.sanquer@gmail.com>
  */
-class EmbeddedAsset extends Twig_Node
+class EmbeddedAsset extends \Twig_Node
 {
-    public function __construct(Twig_NodeInterface $body, $package,  $format, $lineno, $tag = 'embeddedasset')
+    public function __construct(\Twig_NodeInterface $body, $package,  $format, $lineno, $tag = 'embeddedasset')
     {
         parent::__construct(
             array('body' => $body),
@@ -29,9 +25,9 @@ class EmbeddedAsset extends Twig_Node
     /**
      * Compiles the node to PHP.
      *
-     * @param Twig_Compiler A Twig_Compiler instance
+     * @param \Twig_Compiler A Twig_Compiler instance
      */
-    public function compile(Twig_Compiler $compiler)
+    public function compile(\Twig_Compiler $compiler)
     {
         $compiler
             ->addDebugInfo($this)

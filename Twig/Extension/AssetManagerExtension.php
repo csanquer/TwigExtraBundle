@@ -4,10 +4,8 @@ namespace CSanquer\Bundle\TwigExtraBundle\Twig\Extension;
 
 use \CSanquer\Bundle\TwigExtraBundle\Asset\AssetManager;
 use \CSanquer\Bundle\TwigExtraBundle\Twig\TokenParser\EmbeddedAsset as EmbeddedAssetTokenParser;
-use \Twig_Extension;
-use \Twig_SimpleFunction;
 
-class AssetManagerExtension extends Twig_Extension
+class AssetManagerExtension extends \Twig_Extension
 {
     /**
      *
@@ -30,11 +28,11 @@ class AssetManagerExtension extends Twig_Extension
     public function getFunctions()
     {
         return array(
-            new Twig_SimpleFunction('add_asset', array($this->manager, 'addFile')),
-            new Twig_SimpleFunction('add_embedded_asset', array($this->manager, 'addEmbeddedContent')),
-            new Twig_SimpleFunction('get_assets', array($this->manager, 'getFiles')),
-            new Twig_SimpleFunction('get_embedded_assets', array($this->manager, 'getEmbeddedContents')),
-            new Twig_SimpleFunction('render_embedded_assets', array($this->manager, 'renderEmbeddedContents'), array('is_safe' => array('html', 'js', 'css'))),
+            new \Twig_SimpleFunction('add_asset', array($this->manager, 'addFile')),
+            new \Twig_SimpleFunction('add_embedded_asset', array($this->manager, 'addEmbeddedContent')),
+            new \Twig_SimpleFunction('get_assets', array($this->manager, 'getFiles')),
+            new \Twig_SimpleFunction('get_embedded_assets', array($this->manager, 'getEmbeddedContents')),
+            new \Twig_SimpleFunction('render_embedded_assets', array($this->manager, 'renderEmbeddedContents'), array('is_safe' => array('html', 'js', 'css'))),
         );
     }
 

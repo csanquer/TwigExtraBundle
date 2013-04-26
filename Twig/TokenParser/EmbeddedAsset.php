@@ -2,8 +2,6 @@
 
 namespace CSanquer\Bundle\TwigExtraBundle\Twig\TokenParser;
 
-use \Twig_Token;
-use \Twig_TokenParser;
 use \CSanquer\Bundle\TwigExtraBundle\Twig\Node\EmbeddedAsset as EmbeddedAssetNode;
 
 /**
@@ -11,10 +9,10 @@ use \CSanquer\Bundle\TwigExtraBundle\Twig\Node\EmbeddedAsset as EmbeddedAssetNod
  *
  * @author Charles Sanquer <charles.sanquer@gmail.com>
  */
-class EmbeddedAsset extends Twig_TokenParser
+class EmbeddedAsset extends \Twig_TokenParser
 {
 
-    public function parse(Twig_Token $token)
+    public function parse(\Twig_Token $token)
     {
         $format = 'js';
         $package = 'default';
@@ -38,14 +36,14 @@ class EmbeddedAsset extends Twig_TokenParser
             }
         }
 
-        $stream->expect(Twig_Token::BLOCK_END_TYPE);
+        $stream->expect(\Twig_Token::BLOCK_END_TYPE);
         $body = $this->parser->subparse(array($this, 'decideEmbeddedAssetEnd'), true);
-        $stream->expect(Twig_Token::BLOCK_END_TYPE);
+        $stream->expect(\Twig_Token::BLOCK_END_TYPE);
 
         return new EmbeddedAssetNode($body, $package, $format, $lineno, $this->getTag());
     }
 
-    public function decideEmbeddedAssetEnd(Twig_Token $token)
+    public function decideEmbeddedAssetEnd(\Twig_Token $token)
     {
         return $token->test('end'.$this->getTag());
     }

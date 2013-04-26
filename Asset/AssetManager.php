@@ -55,6 +55,7 @@ class AssetManager
     protected function getItems(array $items, $package = 'default', $format = 'js')
     {
         $package = $package === null || $package === '' ? 'default' : $package;
+
         return isset($items[$format][$package]) ? $items[$format][$package] : array();
     }
 
