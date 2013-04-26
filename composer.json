@@ -2,7 +2,7 @@
     "name": "csanquer/twig-extra-bundle",
     "minimum-stability": "dev",
     "description": "Twig Extra Extensions Bundle",
-    "keywords": [ "assets", "twig", "embed" ],
+    "keywords": [ "assets", "twig", "embed", "bottom", "javascript" ],
     "homepage": "https://github.com/csanquer/TwigExtraBundle",
     "type": "symfony-bundle",
     "license": "LGPL-3.0+",

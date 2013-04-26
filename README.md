@@ -1,6 +1,10 @@
 CSanquer TwigExtraBundle
 ========================
 
+This Bundle provide some extra tools for Twig in Symfony.
+
+Currently, only an asset manager to render any javascript file or code set in any template, all together at the same location in base layout template.
+
 [![Build Status](https://travis-ci.org/csanquer/TwigExtraBundle.png)](https://travis-ci.org/csanquer/TwigExtraBundle)
 
 Requirements

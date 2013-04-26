@@ -5,23 +5,39 @@ Installation
 
 Add this in your `composer.json`
 
+```javascript
     "require": {
         [...]
         "csanquer/twig-extra-bundle" : "dev-master"
     },
+```
 
 And run `php composer.phar update csanquer/twig-extra-bundle`
 
 ### Register the bundle in the Kernel (`app/AppKernel.php`)
 
+```php
     [...]
-    $bundles = array( {
+    $bundles = array( 
         [...]
         new CSanquer\Bundle\TwigExtraBundle\CSanquerTwigExtraBundle(),
     );
+```
 
-Use
-===
+Running Tests
+=============
+
+* go to bundle root directory 
+* install dependencies with composer 
+
+    php composer.phar install --dev
+
+* run phpunit
+
+    phpunit
+
+Usage
+=====
 
 AssetManagerExtension
 ---------------------
