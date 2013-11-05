@@ -2,6 +2,7 @@ CSanquer TwigExtraBundle
 ========================
 
 [![Build Status](https://travis-ci.org/csanquer/TwigExtraBundle.png)](https://travis-ci.org/csanquer/TwigExtraBundle)
+[![Project Status](http://stillmaintained.com/csanquer/TwigExtraBundle.png)](http://stillmaintained.com/csanquer/TwigExtraBundle)
 
 This Bundle provide some extra tools for Twig in Symfony.
 
