@@ -20,7 +20,7 @@ And run `php composer.phar update csanquer/twig-extra-bundle`
     [...]
     $bundles = array( 
         [...]
-        new CSanquer\Bundle\TwigExtraBundle\CSanquerTwigExtraBundle(),
+        new Csanquer\Bundle\TwigExtraBundle\CsanquerTwigExtraBundle(),
     );
 ```
 

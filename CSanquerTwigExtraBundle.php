@@ -1,9 +1,9 @@
 <?php
 
-namespace CSanquer\Bundle\TwigExtraBundle;
+namespace Csanquer\Bundle\TwigExtraBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class CSanquerTwigExtraBundle extends Bundle
+class CsanquerTwigExtraBundle extends Bundle
 {
 }

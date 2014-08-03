@@ -1,8 +1,8 @@
 <?php
 
-namespace CSanquer\Bundle\TwigExtraBundle\Tests\Asset;
+namespace Csanquer\Bundle\TwigExtraBundle\Tests\Asset;
 
-use \CSanquer\Bundle\TwigExtraBundle\Asset\AssetManager;
+use \Csanquer\Bundle\TwigExtraBundle\Asset\AssetManager;
 
 class AssetManagerTest extends \PHPUnit_Framework_TestCase
 {
@@ -22,7 +22,7 @@ class AssetManagerTest extends \PHPUnit_Framework_TestCase
 
     public function testFile()
     {
-        $class = '\CSanquer\Bundle\TwigExtraBundle\Asset\AssetManager';
+        $class = '\Csanquer\Bundle\TwigExtraBundle\Asset\AssetManager';
         $this->assertInstanceOf($class, $this->manager->addFile('js/jquery.js'));
         $this->assertInstanceOf($class, $this->manager->addFile('js/plugins.js'));
         $this->assertInstanceOf($class, $this->manager->addFile('js/main.js', 'pkg1'));
@@ -41,7 +41,7 @@ class AssetManagerTest extends \PHPUnit_Framework_TestCase
 
     public function testEmbeddedContent()
     {
-        $class = '\CSanquer\Bundle\TwigExtraBundle\Asset\AssetManager';
+        $class = '\Csanquer\Bundle\TwigExtraBundle\Asset\AssetManager';
         $this->assertInstanceOf($class, $this->manager->addEmbeddedContent('console.log(\'foo\');'));
         $this->assertInstanceOf($class, $this->manager->addEmbeddedContent('console.log(bar);', 'ready'));
         $this->assertInstanceOf($class, $this->manager->addEmbeddedContent('console.log(1);', 'ready', 'js'));

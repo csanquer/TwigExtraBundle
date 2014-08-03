@@ -1,4 +1,4 @@
-CSanquer TwigExtraBundle
+Csanquer TwigExtraBundle
 ========================
 
 [![Build Status](https://travis-ci.org/csanquer/TwigExtraBundle.png)](https://travis-ci.org/csanquer/TwigExtraBundle)
@@ -27,17 +27,17 @@ License LGPL 3
 
 * Copyright (C) 2013 Charles Sanquer
 
-This file is part of CSanquer TwigExtraBundle.
+This file is part of Csanquer TwigExtraBundle.
 
-CSanquer TwigExtraBundle is free software: you can redistribute it and/or modify
+Csanquer TwigExtraBundle is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-CSanquer TwigExtraBundle is distributed in the hope that it will be useful,
+Csanquer TwigExtraBundle is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU Lesser General Public License for more details.
 
 You should have received a copy of the GNU Lesser General Public License
-along with CSanquer TwigExtraBundle.  If not, see <http://www.gnu.org/licenses/>.
+along with Csanquer TwigExtraBundle.  If not, see <http://www.gnu.org/licenses/>.

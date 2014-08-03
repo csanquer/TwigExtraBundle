@@ -1,6 +1,6 @@
 <?php
 
-namespace CSanquer\Bundle\TwigExtraBundle\Twig\Node;
+namespace Csanquer\Bundle\TwigExtraBundle\Twig\Node;
 
 /**
  * EmbeddedAsset

@@ -21,6 +21,6 @@
         "phpunit/phpunit": "~3.7"
     },
     "autoload": {
-        "psr-4": { "CSanquer\\Bundle\\TwigExtraBundle\\": "" }
+        "psr-4": { "Csanquer\\Bundle\\TwigExtraBundle\\": "" }
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace CSanquer\Bundle\TwigExtraBundle\Tests\Twig\Integration;
+namespace Csanquer\Bundle\TwigExtraBundle\Tests\Twig\Integration;
 
-use \CSanquer\Bundle\TwigExtraBundle\Asset\AssetManager;
-use \CSanquer\Bundle\TwigExtraBundle\Twig\Extension\AssetManagerExtension;
+use \Csanquer\Bundle\TwigExtraBundle\Asset\AssetManager;
+use \Csanquer\Bundle\TwigExtraBundle\Twig\Extension\AssetManagerExtension;
 
 /**
  * AssetIntegrationTest

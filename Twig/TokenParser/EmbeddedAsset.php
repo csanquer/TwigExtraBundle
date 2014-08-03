@@ -1,8 +1,8 @@
 <?php
 
-namespace CSanquer\Bundle\TwigExtraBundle\Twig\TokenParser;
+namespace Csanquer\Bundle\TwigExtraBundle\Twig\TokenParser;
 
-use \CSanquer\Bundle\TwigExtraBundle\Twig\Node\EmbeddedAsset as EmbeddedAssetNode;
+use \Csanquer\Bundle\TwigExtraBundle\Twig\Node\EmbeddedAsset as EmbeddedAssetNode;
 
 /**
  * EmbeddedAsset

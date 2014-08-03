@@ -1,6 +1,6 @@
 <?php
 
-namespace CSanquer\Bundle\TwigExtraBundle\DependencyInjection;
+namespace Csanquer\Bundle\TwigExtraBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

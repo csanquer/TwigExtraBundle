@@ -1,6 +1,6 @@
 <?php
 
-namespace CSanquer\Bundle\TwigExtraBundle\Asset;
+namespace Csanquer\Bundle\TwigExtraBundle\Asset;
 
 /**
  * AssetManager
@@ -25,7 +25,7 @@ class AssetManager
      * @param string $package
      * @param string $format
      *
-     * @return \CSanquer\Bundle\TwigExtraBundle\Asset\AssetManager
+     * @return \Csanquer\Bundle\TwigExtraBundle\Asset\AssetManager
      */
     protected function addItem(array &$items, $item, $package = 'default', $format = 'js')
     {
@@ -65,7 +65,7 @@ class AssetManager
      * @param string $package
      * @param string $format
      *
-     * @return CSanquer\Bundle\TwigExtraBundle\Asset\AssetManager
+     * @return Csanquer\Bundle\TwigExtraBundle\Asset\AssetManager
      */
     public function addFile($file, $package = 'default', $format = 'js')
     {
@@ -88,7 +88,7 @@ class AssetManager
      * @param  string                                             $content
      * @param  string                                             $package
      * @param  string                                             $format
-     * @return CSanquer\Bundle\TwigExtraBundle\Asset\AssetManager
+     * @return Csanquer\Bundle\TwigExtraBundle\Asset\AssetManager
      */
     public function addEmbeddedContent($content, $package = 'default', $format = 'js')
     {

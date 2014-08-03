@@ -1,9 +1,9 @@
 <?php
 
-namespace CSanquer\Bundle\TwigExtraBundle\Twig\Extension;
+namespace Csanquer\Bundle\TwigExtraBundle\Twig\Extension;
 
-use \CSanquer\Bundle\TwigExtraBundle\Asset\AssetManager;
-use \CSanquer\Bundle\TwigExtraBundle\Twig\TokenParser\EmbeddedAsset as EmbeddedAssetTokenParser;
+use \Csanquer\Bundle\TwigExtraBundle\Asset\AssetManager;
+use \Csanquer\Bundle\TwigExtraBundle\Twig\TokenParser\EmbeddedAsset as EmbeddedAssetTokenParser;
 
 class AssetManagerExtension extends \Twig_Extension
 {
