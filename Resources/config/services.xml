@@ -4,11 +4,11 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="c_sanquer_twig_extra.asset_manager" class="Csanquer\Bundle\TwigExtraBundle\Asset\AssetManager">
+        <service id="csanquer_twig_extra.asset_manager" class="Csanquer\Bundle\TwigExtraBundle\Asset\AssetManager">
         </service>
 
-        <service id="c_sanquer_twig_extra.extension.asset_manager" class="Csanquer\Bundle\TwigExtraBundle\Twig\Extension\AssetManagerExtension">
-            <argument type="service" id="c_sanquer_twig_extra.asset_manager" />
+        <service id="csanquer_twig_extra.extension.asset_manager" class="Csanquer\Bundle\TwigExtraBundle\Twig\Extension\AssetManagerExtension">
+            <argument type="service" id="csanquer_twig_extra.asset_manager" />
             <tag name="twig.extension" />
         </service>
     </services>
